@@ -1,0 +1,22 @@
+{
+  "name": "test_composer",
+  "version": "1.0.0",
+  "description": "first package",
+  "main": "test.php",
+  "types": "",
+  "scripts": {
+    "test": "mocha --timeout 60000 --exit -r ts-node/register test/**/*.spec.ts",
+    "build": "tsc",
+    "deploy": "npm publish"
+  },
+  "author": "Poonam Chavan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pchavan140/test_composer.git"
+  },
+  .........................
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@pchavan140"
+  }
+}
